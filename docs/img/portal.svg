@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.881" height="28.346" viewBox="0 0 34.881 28.346">
+  <g id="Group_792" data-name="Group 792" transform="translate(-1615.134 -784.359)">
+    <g id="Group_782" data-name="Group 782" transform="translate(1623.471 788.667)">
+      <rect id="Rectangle_400" data-name="Rectangle 400" width="18.208" height="14.606" fill="#00b5e6"/>
+    </g>
+    <g id="Group_783" data-name="Group 783" transform="translate(1618.542 784.359)">
+      <path id="Path_642" data-name="Path 642" d="M1643.165,807.58H1623.8a4.354,4.354,0,0,1-4.349-4.349V788.708a4.354,4.354,0,0,1,4.349-4.349h19.368a4.354,4.354,0,0,1,4.349,4.349v14.524A4.353,4.353,0,0,1,1643.165,807.58ZM1623.8,785.938a2.773,2.773,0,0,0-2.769,2.769v14.524A2.772,2.772,0,0,0,1623.8,806h19.368a2.772,2.772,0,0,0,2.77-2.769V788.708a2.773,2.773,0,0,0-2.77-2.769Z" transform="translate(-1619.449 -784.359)" fill="#fff"/>
+    </g>
+    <g id="Group_784" data-name="Group 784" transform="translate(1615.134 806.053)">
+      <path id="Path_643" data-name="Path 643" d="M1646.689,818.482H1618.46a3.326,3.326,0,1,1,0-6.652h28.229a3.326,3.326,0,1,1,0,6.652Zm-28.229-5.072a1.746,1.746,0,1,0,0,3.493h28.229a1.746,1.746,0,1,0,0-3.493Z" transform="translate(-1615.134 -811.831)" fill="#fff"/>
+    </g>
+    <g id="Group_791" data-name="Group 791" transform="translate(1623.471 808.739)">
+      <g id="Group_785" data-name="Group 785">
+        <circle id="Ellipse_124" data-name="Ellipse 124" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+      <g id="Group_786" data-name="Group 786" transform="translate(6.758)">
+        <circle id="Ellipse_125" data-name="Ellipse 125" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+      <g id="Group_787" data-name="Group 787" transform="translate(3.379)">
+        <circle id="Ellipse_126" data-name="Ellipse 126" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+      <g id="Group_788" data-name="Group 788" transform="translate(9.87)">
+        <circle id="Ellipse_127" data-name="Ellipse 127" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+      <g id="Group_789" data-name="Group 789" transform="translate(16.628)">
+        <circle id="Ellipse_128" data-name="Ellipse 128" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+      <g id="Group_790" data-name="Group 790" transform="translate(13.249)">
+        <circle id="Ellipse_129" data-name="Ellipse 129" cx="0.79" cy="0.79" r="0.79" fill="#00b5e6"/>
+      </g>
+    </g>
+  </g>
+</svg>
