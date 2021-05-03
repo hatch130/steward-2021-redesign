@@ -71,18 +71,50 @@ app.global = {
         });
 
         $(".module-awards.slider > div").slick({
-            variableWidth: true,
+            variableWidth: false,
             dots: true,
             arrows: false,
-            slidesToShow: 5,
-            infinite: false 
+            slidesToShow: 1,
+            infinite: false,
+            mobileFirst: true,
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                    infinite: true,
+                  }
+                }
+            ]
         });
+
+        if($(window).width() < 768){
+            $(".hospital-page .awards > div").slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                infinite: false,
+            });
+        }
 
         $(".module-video .video-list").slick({
             infinite: false,
-            variableWidth: true,
+            variableWidth: false,
             nextArrow: '<button type="button" class="slick-next"><i class="icon-right-bold"></i></button>',
-            prevArrow: '<button type="button" class="slick-prev"><i class="icon-right-bold"></i></button>'
+            prevArrow: '<button type="button" class="slick-prev"><i class="icon-right-bold"></i></button>',
+            dots:true,
+            mobileFirst: true,
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                  }
+                }
+            ]
         });
 
 
@@ -95,6 +127,12 @@ app.global = {
         $(".page-team .team-members .more").click(function(e){
             e.preventDefault();
             $(this).closest('.item').find('.text').toggleClass("open");
+        })
+        
+        $(".page-team .team-members .load-more").click(function(e){
+            e.preventDefault();
+            $(this).closest('.team-members').find('.item').show();
+            $(this).hide();
         })
 
     },

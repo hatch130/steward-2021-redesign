@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css";
 @import "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css";
+@import "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css";
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -16,14 +17,13 @@ html {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?5emkpo");
-  src: url("fonts/icomoon.eot?5emkpo#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?5emkpo") format("truetype"), url("fonts/icomoon.woff?5emkpo") format("woff"), url("fonts/icomoon.svg?5emkpo#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?tv3dk2");
+  src: url("fonts/icomoon.eot?tv3dk2#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?tv3dk2") format("truetype"), url("fonts/icomoon.woff?tv3dk2") format("woff"), url("fonts/icomoon.svg?tv3dk2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=icon-],
-[class*=" icon-"] {
+[class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -37,27 +37,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail .path1:before {
+.icon-email:before {
   content: "";
-  color: #0a2a5a;
-}
-
-.icon-mail .path2:before {
-  content: "";
-  margin-left: -1.2802734375em;
-  color: white;
-}
-
-.icon-mail .path3:before {
-  content: "";
-  margin-left: -1.2802734375em;
-  color: #0a2a5a;
-}
-
-.icon-mail .path4:before {
-  content: "";
-  margin-left: -1.2802734375em;
-  color: white;
 }
 
 .icon-plus:before {
@@ -2947,19 +2928,22 @@ p {
 .hospital-page .service {
   display: flex;
   justify-content: space-between;
-  max-width: 970px;
-  margin: 0 auto 136px;
+  max-width: 1124px;
+  margin: 0 auto 85px;
+  background: #f7fbfd;
+  padding: 60px 65px 52px 98px;
+  border-radius: 8px;
 }
 
 .hospital-page .service .text {
-  padding-right: 95px;
+  padding-right: 101px;
 }
 
 .hospital-page .service .text h2 {
   font-size: 34px;
   line-height: 40px;
   font-weight: normal;
-  margin: 0 0 14px;
+  margin: 0 0 30px;
 }
 
 .hospital-page .service .text p {
@@ -2994,7 +2978,7 @@ p {
 }
 
 .hospital-page .service .text a {
-  color: #00b5e6;
+  color: #3696d5;
   text-decoration: underline;
 }
 
@@ -3005,28 +2989,8 @@ p {
 .hospital-page .service .thumb {
   flex: 0 0 416px;
   position: relative;
-  padding-top: 42px;
+  padding-top: 40px;
   text-align: right;
-}
-
-.hospital-page .service .thumb:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  height: 290px;
-  border-radius: 8px;
-  background-color: #0a2a5a;
-  right: 0;
-  top: 42px;
-}
-
-.hospital-page .service .thumb img {
-  border-radius: 8px;
-  position: relative;
-  z-index: 2;
-  margin-top: 36px;
-  margin-right: 36px;
 }
 
 .hospital-page .awards {
@@ -3043,7 +3007,7 @@ p {
 
 .hospital-page .awards > div {
   margin: 0 auto;
-  max-width: 1019px;
+  max-width: 933px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3058,7 +3022,7 @@ p {
 
 .hospital-page .services-type > div {
   background: #0a2a5a;
-  flex: 0 0 31.28%;
+  flex: 0 0 32%;
   color: #fff;
   padding: 42px 46px 39.5px 43px;
   border-radius: 8px;
@@ -3069,10 +3033,12 @@ p {
   line-height: 30px;
   min-height: 75px;
   margin: 0 0 14px;
+  font-weight: normal;
 }
 
 .hospital-page .services-type > div p {
   margin-bottom: 22px;
+  min-height: 208px;
 }
 
 .hospital-page .services-type > div a {
@@ -3144,7 +3110,7 @@ p {
 .hospital-page .appointment .wrapper .text .info {
   background: #075492;
   color: #fff;
-  padding: 77px 58px 47px 42px;
+  padding: 77px 58px 25px 42px;
   border-radius: 8px;
   margin-bottom: 32px;
   position: relative;
@@ -3156,9 +3122,16 @@ p {
   font-size: 35px;
 }
 
+.hospital-page .appointment .wrapper .text .info .icon-close-bold {
+  font-size: 15px;
+  position: absolute;
+  right: 26px;
+  top: 27px;
+}
+
 .hospital-page .appointment .wrapper .text .info h5 {
   font-size: 19px;
-  margin: 0 0 5px;
+  margin: 25px 0 2px;
   line-height: 26px;
 }
 
@@ -3199,7 +3172,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 22px;
+  width: 469px;
+  max-width: 100%;
+  margin-bottom: 19px;
 }
 
 .hospital-page .appointment .wrapper .form .row.radio {
@@ -3260,6 +3235,7 @@ p {
 
 .hospital-page .appointment .wrapper .form .row label span {
   color: #ec2e57;
+  line-height: 12px;
 }
 
 .hospital-page .appointment .wrapper .form .row input[type=text],
@@ -3308,6 +3284,10 @@ p {
 
 .hospital-page .appointment .wrapper .form .row textarea {
   min-height: 117px;
+  line-height: 26px;
+  font-size: 19px;
+  padding-top: 12px;
+  font-family: Barlow, sans-serif;
 }
 
 .hospital-page .appointment .wrapper .form .submit {
@@ -3315,11 +3295,16 @@ p {
 }
 
 .hospital-page .appointment .wrapper .form .submit .button {
-  min-width: 100px;
+  min-width: 130px;
   line-height: 41px;
-  font-weight: bold;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 16px;
   padding: 0;
+  background-color: #00b5e6;
+}
+
+.hospital-page .appointment .wrapper .form .submit .button:hover {
+  background: #8ac8f5;
 }
 
 @media (max-width: 767px) {
@@ -3330,10 +3315,12 @@ p {
   .hospital-page .sub-header h1 {
     font-size: 33px;
     line-height: 37px;
+    margin-bottom: 14px;
   }
 
   .hospital-page .sub-header .breadcrumbs {
     margin-bottom: 6px;
+    padding-top: 12px;
   }
 
   .hospital-page .sub-header .breadcrumbs .icon-right {
@@ -3377,6 +3364,7 @@ p {
 
   .hospital-page .sub-header .header .menu .menu-items .item {
     margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   .hospital-page .sub-header .header .menu .menu-items a {
@@ -3385,6 +3373,7 @@ p {
     font-weight: normal;
     white-space: pre;
     color: #fff;
+    font-size: 17px;
   }
 
   .hospital-page .page-subtitle {
@@ -3394,20 +3383,23 @@ p {
   }
 
   .hospital-page .service {
-    padding: 0 28px;
+    padding: 36px 28px 50px;
     flex-direction: column;
-    margin-bottom: 95px;
+    margin-bottom: 64px;
   }
 
   .hospital-page .service .text {
     padding-right: 0;
   }
 
-  .hospital-page .service .thumb:after {
-    width: 193px;
-    height: 224px;
-    right: 9px;
-    top: 59px;
+  .hospital-page .service .text h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hospital-page .service .thumb {
+    flex: auto;
+    text-align: left;
   }
 
   .hospital-page .service .thumb img {
@@ -3416,7 +3408,13 @@ p {
 
   .hospital-page .awards {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 121px;
+  }
+
+  .hospital-page .awards h2 {
+    text-align: left;
+    padding: 0 41px 0 31px;
+    margin-bottom: 32px;
   }
 
   .hospital-page .awards > div {
@@ -3424,13 +3422,33 @@ p {
     flex-wrap: wrap;
   }
 
-  .hospital-page .awards > div img {
-    margin-bottom: 48px;
-  }
-
   .hospital-page .awards > div img:last-child {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hospital-page .awards .slick-dots {
+    bottom: -61px;
+    margin-left: -31px;
+  }
+
+  .hospital-page .awards .slick-dots li {
+    margin: 0;
+  }
+
+  .hospital-page .awards .slick-dots button {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eff0f0;
+  }
+
+  .hospital-page .awards .slick-dots button:before {
+    display: none;
+  }
+
+  .hospital-page .awards .slick-dots .slick-active button {
+    background: #3c96d5;
   }
 
   .hospital-page .services-type {
@@ -3439,8 +3457,20 @@ p {
     margin-bottom: 70px;
   }
 
+  .hospital-page .services-type h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-right: 16px;
+  }
+
   .hospital-page .services-type > div {
     margin-bottom: 20px;
+    padding: 48px 19px 39.5px 30px;
+  }
+
+  .hospital-page .services-type > div a {
+    color: #60dcfe;
   }
 
   .hospital-page .appointment .top {
@@ -3467,7 +3497,15 @@ p {
   }
 
   .hospital-page .appointment .wrapper .text .info {
-    padding: 16px 16px 39px 19px;
+    padding: 77px 16px 39px 19px;
+  }
+
+  .hospital-page .appointment .wrapper .text .call {
+    margin-bottom: 27px;
+  }
+
+  .hospital-page .appointment .wrapper .text .note {
+    padding: 0px 10px;
   }
 
   .hospital-page .appointment .wrapper .form {
@@ -3480,12 +3518,26 @@ p {
     align-items: inherit;
   }
 
+  .hospital-page .appointment .wrapper .form .row {
+    padding: 0 11px;
+  }
+
   .hospital-page .appointment .wrapper .form .row:not(.radio) > div {
     flex: 0 0 100%;
   }
 
   .hospital-page .appointment .wrapper .form .row:not(.radio) label {
     margin-top: 20px;
+  }
+
+  .hospital-page .appointment .wrapper .form .row textarea {
+    min-height: 190px;
+  }
+
+  .hospital-page .appointment .wrapper .form .submit .button {
+    min-width: 100px;
+    line-height: 39px;
+    letter-spacing: -0.37px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -3508,6 +3560,7 @@ p {
 
   .hospital-page .service .text {
     padding-right: 40px;
+    padding-top: 30px;
   }
 
   .hospital-page .service .thumb {
@@ -3547,16 +3600,22 @@ p {
 
   .hospital-page .appointment .wrapper .text .info {
     padding: 20px;
+    padding-top: 77px;
   }
 
   .hospital-page .appointment .wrapper .form {
     padding-left: 30px;
   }
+
+  .hospital-page .appointment .wrapper .form .row {
+    width: 100%;
+  }
 }
 .hospital-page2 .community {
   max-width: 1100px;
-  margin: 59px auto 133px;
+  margin: 59px auto 73px;
   display: flex;
+  align-items: center;
 }
 
 .hospital-page2 .community .text {
@@ -3606,10 +3665,12 @@ p {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 1.6px;
-  line-height: 18px;
+  line-height: 27px;
   text-align: right;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hospital-page2 .community .contact ul li i {
@@ -3623,6 +3684,11 @@ p {
   color: #0a2a5a;
   display: inline-block;
   border-radius: 50%;
+  padding: 1px 7px 0;
+}
+
+.hospital-page2 .community .contact ul li i.icon-mail {
+  background: #fff url(img/mail.png) no-repeat center center;
 }
 
 .hospital-page2 .treatments h2 {
@@ -3640,7 +3706,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 930px;
-  margin: 0 auto 184px;
+  margin: 0 auto -40px;
 }
 
 .hospital-page2 .treatments > div > a {
@@ -3692,6 +3758,18 @@ p {
 }
 
 .hospital-page2 .team {
+  background: #f7fbfd;
+}
+
+.hospital-page2 .team:before {
+  content: "";
+  background: url(img/light-bg.svg) no-repeat top center;
+  background-size: 100% auto;
+  display: block;
+  height: 177px;
+}
+
+.hospital-page2 .team > div {
   max-width: 868px;
   margin: 0 auto;
 }
@@ -3700,6 +3778,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
+  margin-top: 51px;
 }
 
 .hospital-page2 .team .head h2 {
@@ -3715,17 +3794,31 @@ p {
   margin-left: 10px;
   line-height: 39px;
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 600;
+  min-width: 186px;
+  padding: 0;
+  letter-spacing: -0.37px;
+}
+
+.hospital-page2 .team .head .buttons .button.stroked {
+  min-width: 189px;
 }
 
 .hospital-page2 .team .head .buttons .button i {
+  font-size: 13px;
+}
+
+.hospital-page2 .team .head .buttons .button.stroked i {
+  font-size: 15px;
   margin-right: 6px;
-  font-size: 17px;
 }
 
 .hospital-page2 .team .members {
-  columns: 3;
-  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 48px;
+  padding-top: 45px;
 }
 
 .hospital-page2 .team .members > div {
@@ -3735,11 +3828,14 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 91px;
 }
 
 .hospital-page2 .team .members > div img {
   border-radius: 50%;
+  margin-top: -50px;
 }
 
 .hospital-page2 .team .members > div h5 {
@@ -3750,7 +3846,7 @@ p {
 }
 
 .hospital-page2 .team .members > div p {
-  min-height: 91px;
+  min-height: 79px;
   padding: 0 10px;
   margin-bottom: 0;
 }
@@ -3761,17 +3857,18 @@ p {
 }
 
 .hospital-page2 .team .members > div .icon-right {
-  width: 45px;
-  height: 45px;
+  width: 43px;
+  height: 43px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   color: #11b5e6;
-  line-height: 45px;
+  line-height: 43px;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: -10px;
 }
 
 .hospital-page2 .appointment .wrapper {
@@ -3786,24 +3883,29 @@ p {
 
 @media (max-width: 767px) {
   .hospital-page2 .community {
-    padding: 0 28px;
+    padding: 0 21px 0 28px;
     flex-direction: column;
-    margin: 39px auto 61px;
+    margin: 39px auto 25px;
+    align-items: stretch;
   }
 
   .hospital-page2 .community .text {
     padding: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .hospital-page2 .community .text h4 {
     margin-top: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .hospital-page2 .community .contact {
     margin-top: 11px;
     flex-direction: column;
     flex: auto;
-    padding: 29px 26px 26px;
+    padding: 29px 26px 9px;
   }
 
   .hospital-page2 .community .contact address {
@@ -3817,6 +3919,16 @@ p {
 
   .hospital-page2 .community .contact ul li {
     text-align: left;
+    flex-direction: row-reverse;
+    margin-bottom: 13px;
+  }
+
+  .hospital-page2 .community .contact ul li i {
+    margin-right: 13px;
+    margin-left: 0;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
   }
 
   .hospital-page2 .service .text h2 {
@@ -3833,11 +3945,16 @@ p {
     font-style: normal;
     letter-spacing: normal;
     line-height: 28px;
+    text-align: left;
+    padding: 0 28px;
+    height: 47px;
+    margin-bottom: 0;
   }
 
   .hospital-page2 .treatments > div {
     padding: 0 28px;
     margin-bottom: 100px;
+    justify-content: center;
   }
 
   .hospital-page2 .treatments > div > a {
@@ -3845,18 +3962,36 @@ p {
     justify-content: left;
     text-align: left;
     padding-left: 25px;
+    margin-bottom: 13px;
   }
 
   .hospital-page2 .team {
-    padding: 0 20px;
+    padding: 0;
+  }
+
+  .hospital-page2 .team:before {
+    background-image: url(img/light-bg-small.svg);
+  }
+
+  .hospital-page2 .team > div {
+    margin: 0 30px;
   }
 
   .hospital-page2 .team .head {
     flex-direction: column;
+    margin-bottom: 35px;
+    margin-top: -18px;
+  }
+
+  .hospital-page2 .team .head h2 {
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .hospital-page2 .team .members {
     columns: 1;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .hospital-page2 .team .members p {
@@ -3865,6 +4000,9 @@ p {
 
   .hospital-page2 .team .buttons {
     margin-bottom: 65px;
+    margin-top: -86px;
+    position: relative;
+    z-index: 10;
   }
 
   .hospital-page2 .team .buttons .button {
@@ -3882,6 +4020,10 @@ p {
     letter-spacing: normal;
     line-height: 28px;
     padding: 0 29px;
+  }
+
+  .hospital-page2 .appointment .wrapper {
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -3951,7 +4093,12 @@ p {
   }
 
   .hospital-page2 .team .members {
-    columns: 3;
+    justify-content: center;
+  }
+
+  .hospital-page2 .team .members > div {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hospital-page2 .team .members p {
@@ -3965,6 +4112,11 @@ p {
     letter-spacing: normal;
     line-height: 28px;
     padding: 0 29px;
+  }
+
+  .hospital-page2 .appointment .wrapper {
+    max-width: 506px;
+    padding-right: 60px;
   }
 }
 .search-page .sub-header {
@@ -3984,7 +4136,7 @@ p {
 
 .search-page .service-types {
   columns: 2;
-  max-width: 934px;
+  max-width: 937px;
   margin: -30px auto 46px;
 }
 
@@ -3994,6 +4146,8 @@ p {
   background: #fff;
   padding: 36px 81px 40px 37px;
   position: relative;
+  margin-bottom: 15px;
+  min-height: 236px;
 }
 
 .search-page .service-types > div h4 {
@@ -4091,10 +4245,13 @@ p {
   max-width: 933px;
   margin: 80px auto 0;
   padding: 34px 37px 41px 50px;
+  border-radius: 8px;
+  background-color: #f7fbfd;
 }
 
 .search-page .about .text {
   display: flex;
+  justify-content: space-between;
 }
 
 .search-page .about .text > div {
@@ -4111,27 +4268,8 @@ p {
 }
 
 .search-page .about .text .thumb {
-  position: relative;
-  text-align: right;
-}
-
-.search-page .about .text .thumb:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 207px;
-  height: 239px;
-  border-radius: 8px;
-  background-color: #0a2a5a;
-  right: 0;
-}
-
-.search-page .about .text .thumb img {
-  border-radius: 8px;
-  position: relative;
-  z-index: 2;
-  margin-top: 30px;
-  margin-right: 30px;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 
 .search-page .cta {
@@ -4144,6 +4282,7 @@ p {
 
 .search-page .cta .thumb {
   flex: 0 0 292px;
+  padding-top: 15px;
 }
 
 .search-page .cta .text {
@@ -4166,6 +4305,11 @@ p {
   font-weight: 600;
   font-size: 18.66px;
   letter-spacing: -0.37px;
+  background: #3c96d5;
+}
+
+.search-page .cta .text .button:hover {
+  background: #8ac8f5;
 }
 
 .search-page .nav-buttons {
@@ -4185,6 +4329,9 @@ p {
   line-height: 38px;
   border-radius: 19px;
   min-width: 214px;
+  padding: 0;
+  background: #142a57;
+  border-radius: 49px;
 }
 
 .search-page .nav-buttons .button:hover {
@@ -4209,15 +4356,17 @@ p {
     line-height: 39px;
     padding-top: 45px;
     margin-bottom: 55px;
+    font-size: 30px;
   }
 
   .search-page .service-types {
     columns: 1;
     padding: 0 27px;
+    margin-bottom: 22.5px;
   }
 
   .search-page .service-types > div {
-    padding: 36px 60px 34px 21px;
+    padding: 35px 60px 33px 21px;
     margin-bottom: 13px;
   }
 
@@ -4228,12 +4377,19 @@ p {
 
   .search-page .address .text {
     flex: auto;
-    padding: 25px 13px 49px 27px;
+    padding: 26px 13px 50px 27px;
+  }
+
+  .search-page .address .text > div {
+    margin-top: 33px;
+    padding-top: 0;
+    border: 0;
   }
 
   .search-page .about {
     margin-top: 40px;
     padding: 0 27px 27px;
+    background: #fff;
   }
 
   .search-page .about .text {
@@ -4242,6 +4398,7 @@ p {
 
   .search-page .about .text > div {
     flex: auto;
+    margin-top: 26px;
   }
 
   .search-page .about .text .thumb:after {
@@ -4267,9 +4424,15 @@ p {
     margin-top: 35px;
   }
 
+  .search-page .cta .text h3 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
   .search-page .cta .text .button {
     line-height: 49px;
     min-width: 331px;
+    font-size: 20px;
   }
 
   .search-page .nav-buttons {
@@ -4282,6 +4445,7 @@ p {
     margin-bottom: 13px;
     min-width: 331px;
     line-height: 49px;
+    font-size: 20px;
   }
 
   .search-page .nav-buttons .button:last-child {
@@ -4635,6 +4799,9 @@ a:hover {
   text-decoration: none;
 }
 
+.module-accordian {
+  margin-top: 41.5px;
+}
 .module-accordian .accordian {
   margin-bottom: 10px;
 }
@@ -4651,7 +4818,7 @@ a:hover {
   background: #0a2a5a;
   border-radius: 6px;
   color: #fff;
-  padding: 20px 19px 20px 24px;
+  padding: 17px 19px 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -4676,11 +4843,18 @@ a:hover {
 }
 .module-accordian .content {
   display: none;
-  padding: 20px 24px 8px 19px;
+  padding: 20px 24px 8px 24px;
   background: #0a2a5a;
   color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+.module-accordian .content ul {
+  margin-top: 0;
+  padding-left: 25px;
+}
+.module-accordian .content ul li {
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .module-accordian .title {
@@ -4741,6 +4915,11 @@ a:hover {
   }
   .module-cta .text p {
     margin-bottom: 43px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .module-cta {
+    padding: 0 30px;
   }
 }
 
@@ -4821,7 +5000,6 @@ div.module-text .text p {
   margin-bottom: 12px;
 }
 div.module-text .text a {
-  color: #00b5e6;
   text-decoration: underline;
 }
 div.module-text .text a:hover {
@@ -4834,7 +5012,7 @@ div.module-text .text ul {
 }
 div.module-text .text ul li {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 div.module-text .text ul li:last-child {
   margin-bottom: 0;
@@ -4849,6 +5027,11 @@ div.module-text .text ul li:before {
   position: absolute;
   left: -23px;
   top: 8px;
+}
+div.module-text .text .trademark {
+  font-size: 8px;
+  position: relative;
+  top: -9px;
 }
 div.module-text .thumb {
   flex: 0 0 341px;
@@ -4939,7 +5122,7 @@ div.module-awards .slick-dots .slick-active button {
     padding: 0 119px;
   }
   div.module-awards > div img {
-    margin: 0 119px;
+    margin: 0 auto !important;
   }
   div.module-awards .slick-dots {
     bottom: -69px;
@@ -5067,6 +5250,7 @@ div.module-awards .slick-dots .slick-active button {
   .module-team .buttons {
     margin-bottom: 0;
     display: grid;
+    margin-left: -6px;
   }
   .module-team .buttons .button {
     min-width: 331px;
@@ -5139,7 +5323,7 @@ div.module-awards .slick-dots .slick-active button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 17px;
+  margin-bottom: 17px !important;
 }
 .module-appointment .wrapper .form .row.full {
   display: block;
@@ -5243,8 +5427,8 @@ div.module-awards .slick-dots .slick-active button {
   }
   .module-appointment .bottom {
     margin-top: -1px;
-    padding-left: 29px;
-    padding-right: 27px;
+    padding-left: 28px;
+    padding-right: 26px;
     padding-bottom: 31px;
   }
   .module-appointment h2 {
@@ -5266,7 +5450,7 @@ div.module-awards .slick-dots .slick-active button {
     margin-bottom: 15px;
   }
   .module-appointment .wrapper .form .row textarea {
-    min-height: 190px;
+    min-height: 190px !important;
   }
   .module-appointment .wrapper .form .row .submit {
     margin-top: 20px;
@@ -5296,16 +5480,22 @@ div.module-awards .slick-dots .slick-active button {
     background: #fff;
     border-radius: 6px;
     padding: 35px 25px 15px 30px;
-    margin-top: 82px;
+    margin-top: 62px;
     transition: 0.35s ease;
+    margin-left: -11px;
   }
   .sub-header .header .menu .sub > li > a {
     font-weight: 500 !important;
   }
   .sub-header .header .menu .sub li a {
     color: #34445c !important;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 22px !important;
+    line-height: 24px !important;
+  }
+  .sub-header .header .menu .sub li a:after {
+    font-size: 13px;
+    top: 50%;
+    margin-top: -9px;
   }
   .sub-header .header .menu .sub li a:hover {
     color: #0a2a5a !important;
@@ -5322,6 +5512,7 @@ div.module-awards .slick-dots .slick-active button {
   }
   .sub-header .header .menu .menu-items a i {
     margin-left: 5px;
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) {
@@ -5338,6 +5529,14 @@ div.module-awards .slick-dots .slick-active button {
     font-size: 16px;
     line-height: 21px;
     white-space: break-spaces;
+  }
+  .sub-header .header .menu .sub > li a:after {
+    top: 50%;
+    margin-top: -9.5px;
+  }
+  .sub-header .header .menu .sub .sup {
+    vertical-align: super;
+    font-size: 12px;
   }
   .sub-header .header .menu .sub-secodanry {
     padding-left: 20px;
@@ -5390,6 +5589,7 @@ div.module-video .main-video .icon-play {
   font-size: 70px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  text-decoration: none;
 }
 div.module-video .main-video .icon-play:hover {
   opacity: 0.9;
@@ -5406,15 +5606,20 @@ div.module-video .video-list:after {
 div.module-video .video-list .slick-slide {
   width: 268px;
   margin-right: 14px;
+  text-decoration: none;
+}
+div.module-video .video-list .slick-slide:hover img {
+  border-color: #60ddff;
 }
 div.module-video .video-list .slick-active img {
-  border: 3px solid #60ddff;
+  border-color: #60ddff;
 }
 div.module-video .video-list .slick-active p {
   font-weight: bold;
 }
 div.module-video .video-list img {
   border-radius: 7px;
+  border: 3px solid transparent;
 }
 div.module-video .video-list p {
   color: #fff;
@@ -5457,6 +5662,9 @@ div.module-video .video-list .slick-prev i {
 }
 div.module-video .video-list .slick-next {
   right: -65px;
+}
+div.module-video .video-list .slick-dots {
+  display: none;
 }
 @media (max-width: 767px) {
   div.module-video {
@@ -5507,7 +5715,7 @@ div.module-video .video-list .slick-next {
 .page-ortho-joint .joint-center .info-group {
   background: #f7fbfd;
   border-radius: 8px;
-  padding: 60px 37px 40px 50px;
+  padding: 60px 38px 40px 51px;
   margin-bottom: 31px;
 }
 .page-ortho-joint .joint-center .info-group > h3 {
@@ -5533,6 +5741,15 @@ div.module-video .video-list .slick-next {
   line-height: 48px;
 }
 @media (max-width: 767px) {
+  .page-ortho-joint .sub-header {
+    min-height: 143px;
+  }
+  .page-ortho-joint div.module-subtitle {
+    margin-bottom: 63px;
+  }
+  .page-ortho-joint div.module-subtitle h1 {
+    margin-bottom: 27px;
+  }
   .page-ortho-joint .module-text {
     margin-top: 0;
     border-radius: 0;
@@ -5543,6 +5760,78 @@ div.module-video .video-list .slick-next {
   }
   .page-ortho-joint .module-text .thumb {
     margin-top: 45px;
+  }
+  .page-ortho-joint div.module-video .main-video {
+    display: none;
+  }
+  .page-ortho-joint div.module-video .video-list:after {
+    display: none;
+  }
+  .page-ortho-joint div.module-video .video-list .slick-active img {
+    border-color: transparent;
+  }
+  .page-ortho-joint div.module-video .video-list p {
+    display: none;
+  }
+  .page-ortho-joint div.module-video .video-list .slick-slide {
+    position: relative;
+    width: 338px;
+  }
+  .page-ortho-joint div.module-video .video-list .slick-slide:after {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-decoration: none;
+    content: "";
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 71px;
+    height: 71px;
+  }
+  .page-ortho-joint div.module-video .slick-next {
+    right: 0px;
+    top: auto;
+    bottom: -61px;
+    z-index: 10;
+  }
+  .page-ortho-joint div.module-video .slick-prev {
+    left: 0;
+    top: auto;
+    bottom: -61px;
+    z-index: 10;
+  }
+  .page-ortho-joint div.module-video .slick-dots {
+    display: block;
+    bottom: -50px;
+  }
+  .page-ortho-joint div.module-video .slick-dots button {
+    opacity: 0.29;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .page-ortho-joint div.module-video .slick-dots button:hover {
+    opacity: 1;
+  }
+  .page-ortho-joint div.module-video .slick-dots button:before {
+    display: none;
+  }
+  .page-ortho-joint div.module-video .slick-dots .slick-active button {
+    background: #60ddff;
+    opacity: 1;
   }
   .page-ortho-joint .service-include {
     margin-top: 40px;
@@ -5572,6 +5861,7 @@ div.module-video .video-list .slick-next {
     background: #fff;
     padding: 30px 0 0;
     margin-bottom: 47px;
+    margin-bottom: 4px;
   }
   .page-ortho-joint .joint-center .info-group > p {
     margin-bottom: 27px;
@@ -5583,7 +5873,7 @@ div.module-video .video-list .slick-next {
     margin-bottom: 2.5px;
   }
   .page-ortho-joint .joint-center .info-group .module-accordian .title {
-    padding: 17px 18px 17px 16px;
+    padding: 16px 18px 16px 15px;
     text-transform: capitalize;
   }
   .page-ortho-joint .joint-center .info-group .module-accordian .title i {
@@ -5602,6 +5892,7 @@ div.module-video .video-list .slick-next {
 
 .page-gymnastics .module-text .thumb {
   margin-left: 63px;
+  padding-top: 14px;
 }
 .page-gymnastics .module-cta {
   margin-bottom: 118px;
@@ -5621,9 +5912,11 @@ div.module-video .video-list .slick-next {
 }
 .page-gymnastics .conditions .list {
   columns: 2;
-  max-width: 793px;
+  max-width: 940px;
   padding: 0 20px;
   margin: 0 auto;
+  column-width: auto;
+  padding-left: 180px;
 }
 .page-gymnastics .conditions .list > div > h4 {
   margin: 0 0 23px;
@@ -5640,7 +5933,7 @@ div.module-video .video-list .slick-next {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
-  max-width: 278px;
+  max-width: 283px;
 }
 .page-gymnastics .conditions ul li:before {
   content: "";
@@ -5656,11 +5949,15 @@ div.module-video .video-list .slick-next {
 @media (max-width: 767px) {
   .page-gymnastics .conditions .list {
     columns: 1;
+    padding-left: 20px;
   }
 }
 
-.page-navio .module-text {
+section.page-navio .module-text {
   margin-bottom: 160px;
+}
+section.page-navio div.module-text .thumb {
+  padding-top: 14px;
 }
 
 .page-sports-medicine .module-text .thumb {
@@ -5685,6 +5982,9 @@ div.module-video .video-list .slick-next {
   margin-top: 161px;
 }
 
+.page-concussion div.module-subtitle {
+  margin-bottom: 43px;
+}
 .page-concussion .module-text {
   margin-bottom: 130px;
 }
@@ -5692,13 +5992,19 @@ div.module-video .video-list .slick-next {
   padding-top: 23px;
 }
 
+.page-hand-surgery div.module-subtitle {
+  margin-bottom: 71px;
+}
 .page-hand-surgery .module-text {
   margin-bottom: 91px;
+}
+.page-hand-surgery .module-text .text ul {
+  margin-top: 28px;
 }
 .page-hand-surgery .info-text {
   max-width: 994px;
   padding: 0 30px;
-  margin: 0 auto 49px;
+  margin: 0 auto 59px;
 }
 .page-hand-surgery .info-text p {
   margin-bottom: 0;
@@ -5759,7 +6065,7 @@ div.module-video .video-list .slick-next {
   border-radius: 50%;
   font-size: 15px;
   color: #11b5e6;
-  top: 62%;
+  top: 60%;
   z-index: 100;
 }
 .module-testimonials .slick-prev:before,
@@ -5793,13 +6099,23 @@ div.module-video .video-list .slick-next {
   }
   .module-testimonials .slick-prev,
 .module-testimonials .slick-next {
-    top: 15%;
+    top: 13%;
   }
   .module-testimonials p {
     margin-bottom: 65px;
   }
 }
 
+.page-team div.module-subtitle {
+  margin-bottom: 45px;
+}
+.page-team div.module-text .thumb {
+  padding-top: 5px;
+}
+.page-team div.module-text .text h3 {
+  margin-right: 46px;
+  font-size: 20px;
+}
 .page-team .team-members {
   background: #f7fbfd url(img/light-bg.svg) no-repeat top -92px center;
   padding-top: 191px;
@@ -5875,19 +6191,32 @@ div.module-video .video-list .slick-next {
     background-position: top -80px center;
     margin-top: -30px;
     padding-bottom: 103px;
+    padding-top: 79px;
   }
   .page-team .team-members .item {
     margin-left: 22.5px;
     margin-right: 22.5px;
     margin-bottom: 27px;
+    display: none;
+  }
+  .page-team .team-members .item:nth-child(1), .page-team .team-members .item:nth-child(2), .page-team .team-members .item:nth-child(3) {
+    display: block;
   }
   .page-team .team-members .item .head {
     display: block;
     padding-left: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
   }
   .page-team .team-members .item .head img {
     margin-bottom: 20px;
+  }
+  .page-team .team-members .load-more {
+    width: 330px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 48px;
+    font-size: 20px;
   }
   .page-team div.module-subtitle {
     margin-bottom: 88px;
@@ -5896,8 +6225,14 @@ div.module-video .video-list .slick-next {
     padding-top: 17px;
     margin-bottom: 83px;
   }
+  .page-team .module-appointment .top {
+    background-color: #f7fbfd;
+  }
 }
 
+.page-patient-information div.module-subtitle {
+  margin-bottom: 47px;
+}
 .page-patient-information .info-group {
   background: #f7fbfd;
   border-radius: 8px;
@@ -5910,13 +6245,13 @@ div.module-video .video-list .slick-next {
   font-size: 22px;
   line-height: 30px;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .page-patient-information .info-group > p {
   margin-bottom: 41px;
 }
 .page-patient-information .accordian .title {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .page-patient-information .info-group {
@@ -5924,6 +6259,12 @@ div.module-video .video-list .slick-next {
   }
 }
 
+.page-rehabilitation div.module-subtitle {
+  margin-bottom: 80px;
+}
+.page-rehabilitation div.module-subtitle h1 {
+  margin-bottom: 30px;
+}
 .page-rehabilitation .download-group {
   max-width: 933px;
   margin: 0 auto 20px;
@@ -5936,6 +6277,7 @@ div.module-video .video-list .slick-next {
   font-weight: 400;
   line-height: 30px;
   margin: 0 0 29px;
+  text-transform: capitalize;
 }
 .page-rehabilitation .download-group > p {
   height: 66px;
@@ -5992,7 +6334,7 @@ div.module-video .video-list .slick-next {
 .page-contact .contact-group h5 {
   font-size: 19px;
   line-height: 22px;
-  margin: 0 0 15px;
+  margin: 0 0 13px;
 }
 .page-contact .contact-group address {
   font-style: normal;
@@ -6008,7 +6350,7 @@ div.module-video .video-list .slick-next {
   text-transform: uppercase;
   color: #3c96d5;
   text-decoration: none;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .page-contact .contact-group .contact a:hover {
   color: #277cb7;
@@ -6016,6 +6358,9 @@ div.module-video .video-list .slick-next {
 .page-contact .contact-group .contact a:hover i {
   background: #3c96d5;
   color: #fff;
+}
+.page-contact .contact-group .contact a:last-child {
+  margin-bottom: 0;
 }
 .page-contact .contact-group .contact a i {
   width: 27px;
@@ -6029,6 +6374,7 @@ div.module-video .video-list .slick-next {
   border-radius: 50%;
   font-weight: normal;
   font-size: 12px;
+  padding: 1px 8px 0;
 }
 .page-contact .module-appointment {
   margin-top: 114px;
@@ -6050,23 +6396,156 @@ div.module-video .video-list .slick-next {
   .page-contact .contact-group .contact a {
     text-align: left;
     line-height: 28px;
+    margin-bottom: 10px;
   }
   .page-contact .contact-group .contact a i {
     float: left;
     margin-right: 16px;
   }
+  .page-contact .module-appointment {
+    margin-top: 61px;
+  }
 }
 
+section.page-ortho-mako div.module-video {
+  margin-bottom: 36px;
+}
+section.page-ortho-mako div.module-text .thumb {
+  padding-top: 22px;
+}
+section.page-ortho-mako .module-cta {
+  max-width: 872px;
+  justify-content: initial;
+}
+section.page-ortho-mako .module-cta .text {
+  margin-left: 31px;
+}
 @media (max-width: 767px) {
-  .page-ortho-mako div.module-subtitle {
+  section.page-ortho-mako div.module-subtitle {
     margin-bottom: 64px;
   }
-  .page-ortho-mako div.module-video .subtitle {
+  section.page-ortho-mako div.module-video .subtitle {
     margin-bottom: 54px;
   }
-  .page-ortho-mako .module-text {
+  section.page-ortho-mako .module-text {
     padding-top: 103px;
   }
+}
+
+.patient-page .sub-header {
+  background: #0a2a5a;
+}
+.patient-page .curve {
+  content: "";
+  display: block;
+  min-height: 176px;
+  background: url(/img/search-hero.svg) no-repeat bottom center;
+  background-size: cover;
+}
+.patient-page .sub-text {
+  max-width: 1040px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 69px;
+  justify-content: space-between;
+}
+.patient-page .sub-text .thumb {
+  margin-left: 83px;
+  flex: 0 0 412px;
+}
+.patient-page .sub-text h1 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: normal;
+  margin-bottom: 24px;
+  margin-top: 18px;
+}
+.patient-page .sub-text .subtitle {
+  font-weight: bold;
+  margin-bottom: 23px;
+  padding: 0;
+}
+.patient-page .sub-text p {
+  margin-bottom: 8px;
+  padding-right: 30px;
+}
+.patient-page .page-content {
+  max-width: 962px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 3px 20px #7bc0d929;
+  padding: 47px 44px 67px;
+  margin-top: -130px;
+}
+.patient-page .page-content > .subtitle {
+  margin-top: 24px;
+}
+.patient-page .page-content .links {
+  columns: 2;
+}
+.patient-page .page-content .links a {
+  display: block;
+}
+
+.page-patient-billing .page-content {
+  margin-top: -68px;
+}
+.page-patient-billing .page-content > .text {
+  max-width: 636px;
+  margin-bottom: 106px;
+}
+.page-patient-billing .page-content h4 {
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  margin: 0 0 18px;
+}
+.page-patient-billing .page-content address {
+  margin-bottom: 28px;
+  font-style: normal;
+}
+.page-patient-billing .page-content .billing-title {
+  margin-top: 95px;
+  margin-bottom: 14px;
+}
+.page-patient-billing .page-content a.phone {
+  display: inline-block;
+  margin-bottom: 75px;
+}
+.page-patient-billing .page-content .button {
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.37px;
+  padding: 0;
+  line-height: 38px;
+  min-width: 174px;
+}
+
+.sub-header .header .menu .menu-items a {
+  font-size: 19px;
+}
+@media only screen and (min-width: 768px) {
+  .sub-header .header .menu .menu-items .item:last-child {
+    margin-right: 10px;
+  }
+}
+
+.parient-hospital-page div.module-text .text h3 {
+  margin: 0 0 24px 0;
+}
+.parient-hospital-page div.module-text .thumb {
+  flex: 0 0 331px;
+  padding-top: 27px;
+}
+.parient-hospital-page .module-appointment .wrapper .form .row textarea {
+  min-height: 110px;
+}
+.parient-hospital-page .module-appointment .wrapper .form .row {
+  margin-bottom: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
