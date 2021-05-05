@@ -153,10 +153,13 @@ app.global = {
             scroll = $(window).scrollTop();
 
         if (scroll >= header_height) {
-            sticky.addClass('sticky');
-            $(".header .alert-box").hide();
+            if(!sticky.hasClass('sticky')){
+                sticky.addClass('sticky');
+                sticky.animate({top: '0px'});
+                $(".header .alert-box").hide();    
+            }
         } else {
-            sticky.removeClass('sticky');
+            sticky.removeClass('sticky').css("top","");;
         }
     }
 },

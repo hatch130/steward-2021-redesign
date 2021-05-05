@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- If you want custom browser colors on mobile -->
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
+
+    <title></title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css?cb=1617181540752">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+
+    <main>
+        <header class="header">
+            <div class="alert-box warn show">
+                <p>This is what an alert with red background looks like. Please follow the directions.</p>
+                <button class="button white">Button</button>
+                <button class="button dismiss">Dismiss <i class="icon-close-bold"></i></button>
+            </div>
+            <div class="meta hide-for-mobile">
+                <label class="toggle" for="switch">
+                    High Contrast <input type="checkbox" id="switch" />
+                    <span></span>
+                </label>
+
+                <div class="language">
+                    <label>Language <i class="icon-down"></i> </label>
+                    <ul>
+                        <li><strong>Select a Language</strong></li>
+                        <li><a href="">Chinese (Traditional)</a></li>
+                        <li><a href="">Haitian Creole</a></li>
+                        <li><a href="">Portugese</a></li>
+                        <li><a href="">Russian</a></li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48 48">
+                                    <defs>
+                                        <path id="a"
+                                            d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                                    </defs>
+                                    <clipPath id="b">
+                                        <use xlink:href="#a" overflow="visible" />
+                                    </clipPath>
+                                    <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
+                                    <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                                    <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                                    <path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo" width="265" />
+                </div>
+
+                <div class="nav">
+                    <div class="button-wrapper">
+                        <button class="button">Book Appointment</button>
+                    </div>
+                    <div class="menu-icon hide-for-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="language hide-for-desktop">
+                        <label>Language <i class="icon-down"></i></label>
+                        <ul>
+                            <li><a href="">Chinese (Traditional)</a></li>
+                            <li><a href="">Haitian Creole</a></li>
+                            <li><a href="">Portugese</a></li>
+                            <li><a href="">Russian</a></li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 48 48">
+                                        <defs>
+                                            <path id="a"
+                                                d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                                        </defs>
+                                        <clipPath id="b">
+                                            <use xlink:href="#a" overflow="visible" />
+                                        </clipPath>
+                                        <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
+                                        <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                                        <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                                        <path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="menu-items">
+                        <li class="item">
+                            <a href="#">Services <i class="icon-down"></i></a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">Services A-Z</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cardiology</a>
+                                </li>
+                                <li>
+                                    <a href="#">Emergency Care</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="#">DoctorFinder<sup>TM</sup></a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Information <i class="icon-down"></i></a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">Services A-Z</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cardiology</a>
+                                </li>
+                                <li>
+                                    <a href="#">Emergency Care</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="spacer hide-for-desktop">
+                        <span></span>
+                    </div>
+                    <div class="search-wrapper hide-for-desktop">
+                        <label class="toggle" for="switchMobile">
+                            High Contrast <input type="checkbox" id="switchMobile" />
+                            <span></span>
+                        </label>
+
+                        <button class="search-icon">
+                            <i class="icon-search"></i>
+                            <i class="icon-close-bold"></i>
+                        </button>
+                    </div>
+                    <div class="search-input hide-for-desktop">
+                        <input type="search" placeholder="Search" id="query">
+                        <button class="button">Search</button>
+                    </div>
+                </div>
+
+                <button class="search-icon hide-for-mobile"> <i class="icon-search"></i></button>
+            </div>
+
+            <div class="search-input hide-for-mobile">
+                <div class="inner">
+                    <i class="icon-search"></i>
+                    <input type="search" placeholder="Search here for conditions, doctors, locations and more"
+                        id="query">
+                    <button class="button">Search</button>
+                </div>
+                <span class="close"><i class="icon-close"></i></span>
+            </div>
+
+        </header>
+        <section class="content hospital-page patient-page page-patient-interpertter">
+            <div class="sub-header">
+                <div class="inner">
+                    <ul class="breadcrumbs">
+                        <li><i class="icon-right hide-for-desktop"></i> St. Elizabeth's Medical Center</li>
+                        <li>Patient & Visitor Information</li>
+                        <li>Interpreter Services</li>
+                    </ul>
+                </div>
+
+                <div class="sub-text">
+                    <div>
+                        <h1>Interpreter Services</h1>
+                        <p class="subtitle">Why do we have Interpreters?</p>
+                        <p>
+                            St. Elizabeth’s Medical Center is committed to providing linguistically and culturally
+                            appropriate services to our patients and families. We have an experienced team of trained
+                            medical Interpreters on staff. In the medical setting, it is essential that patients
+                            actively participate in a dialogue with their health care providers. The need to understand
+                            information, diagnoses, and directions accurately is crucial before making medical decisions
+                            that affect one’s own treatment or that of a loved one. While many of our Limited English
+                            Proficiency (LEP) patients and their families use English in other settings, it may not be
+                            the language they prefer to utilize for medical care. In addition, feelings of anxiousness
+                            or fear about a diagnosis or illness can affect communication. This often happens in
+                            emergency situations when a person may be too nervous to communicate clearly in anything
+                            other than his/her primary language. Interpreter services bridges linguistic and cultural
+                            gaps that may exist between a patient and the medical provider while maintaining strict
+                            patient confidentiality.
+                        </p>
+
+
+                    </div>
+                    <div class="thumb">
+                        <img src="img/doctor2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="curve"></div>
+
+            <div class="page-content">
+                <p class="subtitle"><strong>Interpreters are available 24 hours per day</strong></p>
+
+                <div class="interpreters">
+                    <div>
+                        <div>
+                            <a href="">Português</a>
+                        </div>
+                        <div>
+                            Por favor clique na gravura do alto falante para ouvir uma mensagem de serviço público do
+                            Departamento de Saúde Pública de Massachusetts.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Español</a>
+                        </div>
+                        <div>
+                            Por favor haga clic sobre el símbolo de la bocina para escuchar un mensaje de audio del
+                            servicio público de Massachusetts Department of Public Health.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">請點擊揚</a>
+                        </div>
+                        <div>
+                            請點擊揚聲器按鈕以收聽由麻州公眾健康局提供的語音資
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Tiếng Việt</a>
+                        </div>
+                        <div>
+                            Xin hãy bấm vào nút hình cái loa đe nghe thông tin từ Bộ Y Tế CôNG CộNG của Tiểu Bang MA.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">عربي</a>
+                        </div>
+                        <div>
+                            لطفاً – أُنقر على أيقونة السّماعة لسماع رسالة الخدمات الحكومية من إدارة ماساشيوستس للصّحة
+                            العامة
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Kreyòl Ayisyen</a>
+                        </div>
+                        <div>
+                            Tanpri peze klikè ya pou-w kapab tande mesaj Depatman Sante Piblik Massachusetts lan.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">русский</a>
+                        </div>
+                        <div>
+                            Нажмите, пожалуйста, кнопку "Динамик" и прослушайте сообщение Управления здравоохранения
+                            штата Массачусеттс.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href=""><img src="img/sign.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="">American Sign Language</a>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Shqip</a>
+                        </div>
+                        <div>
+                            Flisni shqip? Ne do t’ju sigurojm një përkthyes pa asnjë kosto personale për ju.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Português</a>
+                        </div>
+                        <div>
+                            Você fala português? Nós lhe forneceremos um interprete, sem nenhum custo adicional.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">ភាសាខ្មែរ</a>
+                        </div>
+                        <div>
+                            ត�ើអ្នកនិយាយភាសាខ្មែរខែរតេ? តយើង្ុំញន្ ឹងផ្ដល់ជូនអ្នកបកខ្បភាសាតោយឥ�គិ�ថ្លៃផ្ទា ល់្លួលៃ
+                            នែល់អ្នក។
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">粵語</a>
+                        </div>
+                        <div>
+                            您講粵語嗎?我們將免費為您提供翻譯
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Kriolu di Kabuverdi</a>
+                        </div>
+                        <div>
+                            Bo ta papia Kriolu di Kabuverdi? No ta ranja-bu un tradutor di grasa.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Deutsch</a>
+                        </div>
+                        <div>
+                            Sprechen Sie Deutsch? Wir stellen Ihnen unentgeltlich einen Dolmetscher zur Verfügung.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Ελληνικά</a>
+                        </div>
+                        <div>
+                            Μιλάτε ελληνικά; Θα σας παρέχουμε ένα διερμηνέα χωρίς καμία οικονομική επιβάρυνση
+                            για εσάς.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="">Kreyòl Ayisyen</a>
+                        </div>
+                        <div>
+                            Èske ou pale Kreyòl Ayisyen? N ap ba ou yon entèprèt gratis.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Italiano</a>
+                        </div>
+                        <div>
+                            Parla italiano? Le forniremo gratuitamente un interprete.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">中文</a>
+                        </div>
+                        <div>
+                            您讲国语吗?我们将免费为您提供翻译
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Deitsch</a>
+                        </div>
+                        <div>
+                            Kannscht du Deitsch schwetze? Wann du duscht, kenne mer dich en Interpreter griege as dich
+                            nix koschte zellt.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <a href="">Polski</a>
+                        </div>
+                        <div>
+                            Czy mówisz po polsku? Zapewnimy bezpłatną pomoc tłumacza.
+                        </div>
+                        <div>
+                            <a href=""><i class="icon-sound"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="secondary-content">
+                <p class="subtitle"><strong>How to reach an interpreter at St. Elizabeth's Medical Center:</strong></p>
+                <p>St. Elizabeth's Medical Center's team of health care providers and support staff work closely with
+                    interpreter services to ensure that our medical interpreters are prepared to support your care. In
+                    the event that you need to reschedule your appointment or have questions related to ongoing care,
+                    contact interpreter services or your provider's direct number to discuss your situation. Contact
+                    information for our department is listed below.</p>
+
+                <p>
+                    Russian: 617-562-7760
+                    Spanish: 617-562-7033
+                    Portuguese: 617-562-7404; 617-562-7029
+                    Mandarin/Cantonese Chinese: 617-779-6554
+                    English/Other: 617-789-2331
+                    Email: <a href="">sem.interpreter@steward.org</a>
+                </p>
+            </div>
+
+            <div class="secondary-content">
+                <p class="subtitle warn"><i class="icon-error"></i><strong>Please Note</strong></p>
+                <p>In emergency or short-notice situations when an in-person interpreter is not immediately available
+                    for a specific language, we may utilize telephonic and/or video remote interpretation. St.
+                    Elizabeth’s Medical Center has invested in the latest communications technology in order to ensure
+                    that our LEP patients always receive an equivalent standard of care compared to non-LEP patients.
+                    Our services include customized wireless conference phones and dual-handset phones stationed at key
+                    hospital departments with access to both staff and outside Interpreters in 200 languages and
+                    dialects. We offer video remote interpreting supported with a computer and webcam when assisting
+                    deaf patients through American Sign Language (ASL) to supplement in-person ASL Interpreters
+                    requested from the Massachusetts Commission for the Deaf and Hard of Hearing (MCDHH). We also
+                    support video remote interpretation for a number of our most frequently requested languages.</p>
+            </div>
+
+        </section>
+        <footer id="footer">
+            <div class="inner">
+                <div class="menus">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                            <li>
+                                <a href="">DoctorFinder<sup>TM</sup></a>
+                            </li>
+                            <li>
+                                <a href="">Information</a>
+                            </li>
+                        </ul>
+
+                        <a href="" class="button">Book Appointment</a>
+                    </div>
+                    <div class="right hide-for-mobile">
+                        <div>
+                            <h5>Emergency Care</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Cardiology</a>
+                                </li>
+                                <li>
+                                    <a href="">Emergency Care</a>
+                                </li>
+                            </ul>
+
+                            <a href="" class="view-all">View All</a>
+                        </div>
+
+                        <div>
+                            <h5>Patients</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Cardiology</a>
+                                </li>
+                                <li>
+                                    <a href="">Emergency Care</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div>
+                            <h5>About Us</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Cardiology</a>
+                                </li>
+                                <li>
+                                    <a href="">Emergency Care</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div>
+                            <h5>Contact</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Main Number: 617-789-3000</a>
+                                </li>
+                                <li>
+                                    <a href="">DoctorFinder: 800-488-5959</a>
+                                </li>
+                                <li>
+                                    <a href="">Billing: 844-660-0100</a>
+                                </li>
+                                <li>
+                                    <a href="">Media: 617-779-6098</a>
+                                </li>
+                            </ul>
+                            <address>736 Cambridge St. Brighton, MA 02135</address>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands">
+                    <span class="logo">
+                        <img src="img/footer-s-logo.svg" alt="logo">
+                    </span>
+
+                    <span class="links hide-for-mobile">
+                        <span>COPYRIGHT © 2018</span> <span class="divider">|</span> <a href="">PRIVACY POLICY</a> <span
+                            class="divider">|</span> <a href="">SITE DISCLAIMER</a> <span class="divider">|</span> <a
+                            href="">VENDORS</a> <span class="divider">|</span> <a href="">NONDISCRIMINATION NOTICE</a>
+                        <span class="divider">|</span> <a href="">INTERPRETER SERVICES</a>
+                    </span>
+
+                    <span class="social">
+                        <a href="">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript File -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="all.js?cb=1617181540752"></script>
+</body>
+
+</html>
