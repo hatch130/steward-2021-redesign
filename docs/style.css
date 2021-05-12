@@ -1803,6 +1803,10 @@ p {
   padding: 27px 18px 33px;
 }
 
+section.content.home-page a {
+    color: #0A2A5A;
+}
+
 @media only screen and (min-width: 768px) {
   .home-page .services {
     max-width: 960px;
