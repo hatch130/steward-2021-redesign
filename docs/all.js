@@ -124,12 +124,12 @@ app.global = {
             prevArrow: '<button type="button" class="slick-prev"><i class="icon-right"></i></button>'
         });
 
-        $(".page-team .team-members .more").click(function(e){
+        $(".team-members .more").click(function(e){
             e.preventDefault();
             $(this).closest('.item').find('.text').toggleClass("open");
         })
         
-        $(".page-team .team-members .load-more").click(function(e){
+        $(".team-members .load-more").click(function(e){
             e.preventDefault();
             $(this).closest('.team-members').find('.item').show();
             $(this).hide();

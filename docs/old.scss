@@ -38,6 +38,13 @@ html {
     -moz-osx-font-smoothing: grayscale;
   }
   
+
+.icon-youtube:before {
+    content: "\e911";
+  }
+  .icon-linkedin:before {
+    content: "\e912";
+  }
   .icon-error:before {
     content: "\e90d";
     color: #ec2e57;
@@ -167,6 +174,7 @@ html {
   .icon-twitter1:before {
     content: "\e90b";
   }
+  
   
   
 
@@ -1848,6 +1856,10 @@ p {
 
 .home-page .services {
 	padding: 27px 18px 33px;
+}
+
+section.content.home-page a {
+    color: #0A2A5A;
 }
 
 @media only screen and (min-width: 768px) {
