@@ -4432,27 +4432,27 @@ section.page-ortho-mako {
 			font-style: normal;
 			letter-spacing: normal;
 			line-height: 28px;
-            text-align: center;
-            margin-bottom: 55px;
+			text-align: center;
+			margin-bottom: 55px;
 		}
 	}
 	.module-text {
 		background-color: #fff;
-    }
-    .additional-text{
-        max-width: 858px;
-        margin: 0 auto;
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 26px;
-        text-align: center;
-        margin-bottom: 71px;
-    }
+	}
+	.additional-text {
+		max-width: 858px;
+		margin: 0 auto;
+		font-size: 19px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: center;
+		margin-bottom: 71px;
+	}
 	.columns {
 		columns: 2;
 		max-width: 1102px;
-        margin: 0 auto 55px;
-        padding-bottom: 72px;
+		margin: 0 auto 55px;
+		padding-bottom: 72px;
 		> div {
 			width: 508px;
 			max-width: 100%;
@@ -4482,33 +4482,263 @@ section.page-ortho-mako {
 				border-bottom: 1px solid #3c96d5;
 			}
 		}
+	}
+
+	@media (max-width: 767px) {
+		.columns {
+			columns: 1;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		.intro-text {
+			margin-left: 28px;
+			margin-right: 28px;
+		}
+		.module-text {
+			margin-left: 28px;
+			margin-right: 28px;
+		}
+		.additional-text {
+			margin-left: 28px;
+			margin-right: 28px;
+		}
+
+		.columns {
+			margin-left: 28px;
+			margin-right: 28px;
+		}
+	}
+}
+
+.appointment-page {
+    background: #F7FBFD;
+    padding-bottom: 89px;
+	.sub-header {
+		min-height: 300px;
+		h1 {
+			max-width: 1124px;
+			margin: 0 auto;
+			margin-top: 87px;
+			margin-bottom: 70px;
+			padding-left: 86px;
+		}
+	}
+	.page-content {
+		max-width: 1124px;
+		margin: 0 auto;
+		padding: 0 20px;
+		box-shadow: 0 3px 20px rgb(123 192 217 / 16%);
+		border-radius: 6px;
+		background-color: #ffffff;
+		padding: 92px 62px 55px 95px;
+        margin-top: -66px;
+        
+
+		display: flex;
+
+		justify-content: space-between;
+
+		.form {
+            max-width: 554px;
+            padding-right: 40px;
+			.row {
+				margin-bottom: 32px;
+
+                .tip{
+                    font-style: italic;
+                    margin-top: 18px;
+                    margin-bottom: 20px;
+                }
+				
+				label {
+					font-size: 14px;
+					letter-spacing: 1.4px;
+					line-height: 12px;
+					text-transform: uppercase;
+					font-weight: bold;
+					display: block;
+					margin-bottom: 8px;
+
+					span {
+						color: #ec2e57;
+					}
+				}
+
+				input {
+					&[type="text"],
+					&[type="email"],
+					&[type="tel"], 
+					&[type="number"] {
+						background: #eff4f8;
+						line-height: 46px;
+						padding: 0 15px;
+						border: 0;
+						border: 2px solid transparent;
+						border-radius: 8px;
+						outline: 0;
+						width: 100%;
+						height: 50px;
+						font-family: Barlow, sans-serif;
+						font-size: 19px;
+						line-height: 26px;
+					}
+				}
+
+				textarea {
+					background: #eff4f8;
+					line-height: 46px;
+					padding: 0 15px;
+					border: 0;
+					border: 2px solid transparent;
+					border-radius: 8px;
+					outline: 0;
+					width: 100%;
+					height: 196px;
+					font-family: Barlow, sans-serif;
+					font-size: 19px;
+					line-height: 26px;
+				}
+
+				input {
+					&[type="text"]:hover,
+					&[type="number"]:hover,
+					&[type="email"]:hover,
+					&[type="tel"]:hover {
+						border: 1px solid #53b3e1;
+					}
+				}
+
+				textarea:hover {
+					border: 1px solid #53b3e1;
+				}
+
+				input {
+					&[type="text"]:focus,
+					&[type="email"]:focus,
+					&[type="number"]:focus,
+					&[type="tel"]:focus {
+						box-shadow: 0px 6px 12px #388adb4b;
+						border-color: #53b3e1;
+						&:hover {
+							border-width: 2px;
+						}
+					}
+				}
+
+				textarea:focus {
+					box-shadow: 0px 6px 12px #388adb4b;
+					border-color: #53b3e1;
+					&:hover {
+						border-width: 2px;
+					}
+				}
+
+				input {
+					&[type="text"]:disabled,
+					&[type="email"]:disabled,
+					&[type="tel"]:disabled 
+					&[type="number"]:disabled {
+						border-color: #d8d8d8;
+					}
+				}
+
+				textarea:disabled {
+					border-color: #d8d8d8;
+				}
+
+				input {
+					&[type="text"].error,
+					&[type="email"].error,
+					&[type="tel"].error 
+					&[type="number"].error {
+						border-color: #d63c42;
+					}
+				}
+
+				textarea {
+					&.error {
+						border-color: #d63c42;
+					}
+					padding-top: 16px;
+					line-height: 26px;
+					min-height: 117px;
+
+					&::placeholder {
+						color: rgba(#0a2a5a, 0.83);
+					}
+				}
+			}
+
+			.submit {
+				.button {
+					min-width: 104px;
+					line-height: 38px;
+					font-weight: bold;
+					font-size: 19px;
+                    padding: 0;
+                    letter-spacing: -0.37px;
+				}
+			}
+		}
+		> .text {
+			flex: 0 0 343px;
+			a {
+				font-weight: 600;
+				color: #3c96d5;
+			}
+			p {
+				margin-bottom: 27px;
+			}
+		}
     }
     
-    @media (max-width: 767px){
-       
-        .columns{
-            columns: 1;
-           
-        }
-    }
-
     @media (max-width: 1023px){
-        .intro-text{
-            margin-left: 28px;
-            margin-right: 28px;
-        }
-        .module-text{
-            margin-left: 28px;
-            margin-right: 28px;
-        }
-        .additional-text{
-            margin-left: 28px;
-            margin-right: 28px;
+        padding-bottom: 55px;
+        .sub-header .breadcrumbs li.home{
+            display: block;
+            color: #60ddff;
+            font-weight: 600;
+
+            .icon-right{
+                font-size: 8px;
+            }
         }
 
-        .columns{
-            margin-left: 28px;
-            margin-right: 28px;
+        .sub-header{
+            min-height: 170px;
+
+            h1{
+                padding-left: 0;
+                margin-top: 37px;
+            }
+        }
+
+
+        .page-content{
+            margin-top: 0;
+            background: transparent;
+            box-shadow: none;
+            padding: 32px 22px 32px 27px;
+            flex-direction: column;
+
+            .text{
+                flex: auto;
+                order:1;
+                margin-bottom: 54px;
+            }
+            .form{
+                order:2;
+                box-shadow: 0px 3px 20px #7BC0D929;
+                border-radius: 6px;
+                background: #fff;
+                margin: 0 -22px 0 -27px;
+                padding: 42px 28px 12px 29px;
+
+                .submit{
+                    text-align: center;
+                }
+            }
         }
     }
 }
