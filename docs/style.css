@@ -4863,7 +4863,7 @@ ul.list li:before {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #00b5e6;
+  background: #3c96d5;
   border-radius: 50%;
   position: absolute;
   left: -23px;
@@ -7532,13 +7532,13 @@ section.page-ortho-mako .module-cta .text {
   background-color: #ffffff;
   margin-bottom: 23px;
   display: flex;
+  align-items: center;
 }
 .news-page .news-list > div .thumb {
   flex: 0 0 269px;
 }
 .news-page .news-list > div .text {
-  padding: 44px 76px 50px 57px;
-  height: 286px;
+  padding: 0 76px 0 57px;
 }
 .news-page .news-list > div h2 {
   font-size: 24px;
@@ -7670,7 +7670,7 @@ section.page-ortho-mako .module-cta .text {
   margin-bottom: 30px;
 }
 .news-post .news-content .thumb {
-  margin: 59px -95px 81px;
+  margin: 79px -95px 81px;
 }
 .news-post .news-content .thumb .caption {
   color: #bababa;
@@ -7809,7 +7809,7 @@ section.page-ortho-mako .module-cta .text {
 .page-contact-us .map-wrapper .address {
   flex: 0 0 432px;
   background: #fff;
-  padding: 71px 95px 50px 93px;
+  padding: 71px 90px 50px 93px;
   position: relative;
 }
 .page-contact-us .map-wrapper .address h5 {
@@ -7817,12 +7817,13 @@ section.page-ortho-mako .module-cta .text {
   font-weight: 700;
   line-height: 22px;
   font-size: 19px;
+  margin-bottom: 20px;
 }
 .page-contact-us .map-wrapper .address span {
   position: absolute;
-  width: 29px;
-  height: 29px;
-  line-height: 29px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
   text-align: center;
   background-color: rgba(10, 42, 90, 0.13);
   border-radius: 50%;
@@ -7845,7 +7846,7 @@ section.page-ortho-mako .module-cta .text {
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 1px solid #3c96d5;
+  border-bottom: 1px solid #0094d7;
 }
 .page-contact-us .map-wrapper .address a:hover {
   border-color: transparent;
@@ -7903,7 +7904,7 @@ section.page-ortho-mako .module-cta .text {
   font-size: 20px;
   font-weight: 400;
   max-width: 936px;
-  margin: 73px auto 70px;
+  margin: 73px auto 129px;
   text-align: center;
 }
 .page-contact-us .info-text a {
@@ -7982,6 +7983,9 @@ section.page-ortho-mako .module-cta .text {
 .page-about-us {
   background-color: #f7fbfd;
 }
+.page-about-us .sub-header {
+  min-height: 193px;
+}
 .page-about-us .page-content {
   max-width: 934px;
   margin: 0 auto;
@@ -7995,7 +7999,11 @@ section.page-ortho-mako .module-cta .text {
   margin-bottom: 45px;
 }
 .page-about-us .page-content .text-content .list {
-  margin-left: 24px;
+  padding-left: 47px;
+}
+.page-about-us .page-content .text-content .list li:before {
+  left: -16px;
+  top: 8px;
 }
 .page-about-us .explore {
   max-width: 1148px;
@@ -8070,10 +8078,12 @@ section.page-ortho-mako .module-cta .text {
 .page-about-us .explore .grid p {
   font-weight: 700;
   line-height: 22px;
+  color: #0a2a5a;
 }
 .page-about-us .secondary-text-content {
-  max-width: 1124px;
+  max-width: 1148px;
   margin: 66px auto 76px;
+  padding-right: 24px;
 }
 .page-about-us .secondary-text-content .group {
   display: flex;
@@ -8140,9 +8150,14 @@ section.page-ortho-mako .module-cta .text {
 }
 .page-about-us .secondary-content .columns {
   columns: 2;
+  column-gap: 46px;
   margin-bottom: 55px;
+  position: relative;
+  left: 11px;
 }
 .page-about-us .secondary-content .columns > div {
+  display: inline-block;
+  margin: 0 0 0 0;
   width: 508px;
   max-width: 100%;
   box-shadow: 0 3px 20px rgba(123, 192, 217, 0.16);
@@ -8153,6 +8168,9 @@ section.page-ortho-mako .module-cta .text {
 }
 .page-about-us .secondary-content .columns > div h5 {
   margin: 0 0 20px;
+  font-size: 19px;
+  max-width: 285px;
+  line-height: 22px;
 }
 .page-about-us .secondary-content .columns > div a.more {
   display: inline-block;
@@ -8222,6 +8240,11 @@ section.page-ortho-mako .module-cta .text {
   right: 27px;
   position: absolute;
   top: 61px;
+}
+.page-about-us .secondary-content .find-us > a i:before {
+  left: 1px;
+  top: 1px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .page-about-us .page-content {
@@ -8563,6 +8586,7 @@ section.page-ortho-mako .module-cta .text {
 }
 .page-fellowships .module-video .text p {
   margin-bottom: 36px;
+  max-width: 750px;
 }
 .page-fellowships .module-video .text .view {
   color: #3c96d5;
@@ -8575,17 +8599,20 @@ section.page-ortho-mako .module-cta .text {
   padding-bottom: 2px;
   line-height: 20px;
   border-bottom: 1px solid #3c96d5;
+  margin-top: 22px;
+  display: inline-block;
 }
 .page-fellowships .links {
   max-width: 932px;
   margin: 0 auto;
 }
-.page-fellowships .links h2 {
+.page-fellowships .links h3 {
   font-size: 34px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 40px;
+  margin-bottom: 44px;
 }
 .page-fellowships .links > div {
   display: flex;
@@ -8688,6 +8715,12 @@ section.page-ortho-mako .module-cta .text {
 .page-community .module-text {
   background-color: #fff;
 }
+.page-community .module-text p {
+  margin-bottom: 18px;
+}
+.page-community .module-text .thumb {
+  margin-left: 60px;
+}
 .page-community .additional-text {
   max-width: 858px;
   margin: 0 auto;
@@ -8704,6 +8737,7 @@ section.page-ortho-mako .module-cta .text {
   padding-bottom: 72px;
 }
 .page-community .columns > div {
+  display: inline-block;
   width: 508px;
   max-width: 100%;
   box-shadow: 0 3px 20px rgba(123, 192, 217, 0.16);
@@ -8714,6 +8748,8 @@ section.page-ortho-mako .module-cta .text {
 }
 .page-community .columns > div h5 {
   margin: 0 0 20px;
+  font-size: 19px;
+  line-height: 22px;
 }
 .page-community .columns > div a.more {
   display: inline-block;
@@ -8782,7 +8818,6 @@ section.page-ortho-mako .module-cta .text {
 }
 .appointment-page .page-content .form {
   max-width: 554px;
-  padding-right: 40px;
 }
 .appointment-page .page-content .form .row {
   margin-bottom: 32px;
@@ -8790,7 +8825,7 @@ section.page-ortho-mako .module-cta .text {
 .appointment-page .page-content .form .row .tip {
   font-style: italic;
   margin-top: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 52px;
 }
 .appointment-page .page-content .form .row label {
   font-size: 14px;
@@ -8877,11 +8912,18 @@ section.page-ortho-mako .module-cta .text {
   line-height: 38px;
   font-weight: bold;
   font-size: 19px;
+  font-weight: 600;
   padding: 0;
   letter-spacing: -0.37px;
+  background: #3c96d5;
+}
+.appointment-page .page-content .form .submit .button:hover {
+  background: #8ac8f5;
 }
 .appointment-page .page-content > .text {
   flex: 0 0 343px;
+  padding-top: 15px;
+  color: #34445C;
 }
 .appointment-page .page-content > .text a {
   font-weight: 600;

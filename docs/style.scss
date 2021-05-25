@@ -25,7 +25,7 @@ ul.list {
 			display: inline-block;
 			width: 8px;
 			height: 8px;
-			background: #00b5e6;
+			background: #3c96d5;
 			border-radius: 50%;
 			position: absolute;
 			left: -23px;
@@ -3103,15 +3103,15 @@ section.page-ortho-mako {
 			border-radius: 6px;
 			background-color: #ffffff;
 			margin-bottom: 23px;
-			display: flex;
+            display: flex;
+            align-items: center;
 
 			.thumb {
 				flex: 0 0 269px;
 			}
 
 			.text {
-				padding: 44px 76px 50px 57px;
-				height: 286px;
+                padding: 0 76px 0 57px;
 			}
 
 			h2 {
@@ -3258,7 +3258,9 @@ section.page-ortho-mako {
 		}
 
 		.thumb {
-			margin: 59px -95px 81px;
+			
+            margin: 79px -95px 81px;
+
 			.caption {
 				color: #bababa;
 				font-size: 19px;
@@ -3421,26 +3423,27 @@ section.page-ortho-mako {
 		.address {
 			flex: 0 0 432px;
 			background: #fff;
-			padding: 71px 95px 50px 93px;
+			padding: 71px 90px 50px 93px;
 			position: relative;
 			h5 {
 				margin: 0;
 				font-weight: 700;
 				line-height: 22px;
-				font-size: 19px;
+                font-size: 19px;
+                margin-bottom: 20px;
 			}
 			span {
-				position: absolute;
-				width: 29px;
-				height: 29px;
-				line-height: 29px;
-				text-align: center;
-				background-color: rgba(#0a2a5a, 0.13);
-				border-radius: 50%;
-				margin-left: -42px;
-				color: #0a2a5a;
-				font-size: 16px;
-				font-weight: 700;
+                position: absolute;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                background-color: rgba(10, 42, 90, 0.13);
+                border-radius: 50%;
+                margin-left: -42px;
+                color: #0a2a5a;
+                font-size: 16px;
+                font-weight: 700;
 			}
 			address {
 				max-width: 180px;
@@ -3457,7 +3460,7 @@ section.page-ortho-mako {
 				text-transform: uppercase;
 				text-decoration: none;
 				padding-bottom: 3px;
-				border-bottom: 1px solid #3c96d5;
+				border-bottom: 1px solid #0094d7;
 				&:hover {
 					border-color: transparent;
 				}
@@ -3525,7 +3528,7 @@ section.page-ortho-mako {
 		font-size: 20px;
 		font-weight: 400;
 		max-width: 936px;
-		margin: 73px auto 70px;
+		margin: 73px auto 129px;
 		text-align: center;
 
 		a {
@@ -3614,7 +3617,11 @@ section.page-ortho-mako {
 }
 
 .page-about-us {
-	background-color: #f7fbfd;
+    background-color: #f7fbfd;
+    
+    .sub-header{
+        min-height: 193px;
+    }
 	.page-content {
 		max-width: 934px;
 		margin: 0 auto;
@@ -3630,7 +3637,11 @@ section.page-ortho-mako {
 			}
 
 			.list {
-				margin-left: 24px;
+                padding-left: 47px;
+                li:before{
+                    left: -16px;
+                    top: 8px;
+                }
 			}
 		}
 	}
@@ -3712,14 +3723,16 @@ section.page-ortho-mako {
 
 			p {
 				font-weight: 700;
-				line-height: 22px;
+                line-height: 22px;
+                color:#0a2a5a;
 			}
 		}
 	}
 
 	.secondary-text-content {
-		max-width: 1124px;
-		margin: 66px auto 76px;
+		max-width: 1148px;
+        margin: 66px auto 76px;
+        padding-right: 24px;
 
 		.group {
 			display: flex;
@@ -3795,9 +3808,14 @@ section.page-ortho-mako {
 		}
 
 		.columns {
-			columns: 2;
-			margin-bottom: 55px;
+            columns: 2;
+            column-gap: 46px;
+            margin-bottom: 55px;
+            position: relative;
+            left: 11px;
 			> div {
+                display: inline-block;
+                margin: 0 0 0 0;
 				width: 508px;
 				max-width: 100%;
 				box-shadow: 0 3px 20px rgba(123, 192, 217, 0.16);
@@ -3807,7 +3825,10 @@ section.page-ortho-mako {
 				margin-bottom: 41px;
 
 				h5 {
-					margin: 0 0 20px;
+                    margin: 0 0 20px;
+                    font-size: 19px;
+                    max-width: 285px;
+                    line-height: 22px;
 				}
 
 				a.more {
@@ -3884,7 +3905,12 @@ section.page-ortho-mako {
 					color: #11b5e6;
 					right: 27px;
 					position: absolute;
-					top: 61px;
+                    top: 61px;
+                    &:before{
+                        left: 1px;
+                        top: 1px;
+                        position: relative;
+                    }
 				}
 			}
 		}
@@ -4298,7 +4324,8 @@ section.page-ortho-mako {
 				margin: 0 0 16px;
 			}
 			p {
-				margin-bottom: 36px;
+                margin-bottom: 36px;
+                max-width: 750px;
 			}
 
 			.view {
@@ -4311,7 +4338,9 @@ section.page-ortho-mako {
 				text-decoration: none;
 				padding-bottom: 2px;
 				line-height: 20px;
-				border-bottom: 1px solid #3c96d5;
+                border-bottom: 1px solid #3c96d5;
+                margin-top: 22px;
+                display: inline-block;
 			}
 		}
 	}
@@ -4320,12 +4349,13 @@ section.page-ortho-mako {
 		max-width: 932px;
 		margin: 0 auto;
 
-		h2 {
+		h3 {
 			font-size: 34px;
 			font-weight: 400;
 			font-style: normal;
 			letter-spacing: normal;
-			line-height: 40px;
+            line-height: 40px;
+            margin-bottom: 44px;
 		}
 
 		> div {
@@ -4437,7 +4467,13 @@ section.page-ortho-mako {
 		}
 	}
 	.module-text {
-		background-color: #fff;
+        background-color: #fff;
+        p{
+            margin-bottom: 18px;
+        }
+        .thumb{
+            margin-left: 60px;
+        }
 	}
 	.additional-text {
 		max-width: 858px;
@@ -4454,6 +4490,7 @@ section.page-ortho-mako {
 		margin: 0 auto 55px;
 		padding-bottom: 72px;
 		> div {
+            display: inline-block;
 			width: 508px;
 			max-width: 100%;
 			box-shadow: 0 3px 20px rgba(123, 192, 217, 0.16);
@@ -4463,7 +4500,9 @@ section.page-ortho-mako {
 			margin-bottom: 41px;
 
 			h5 {
-				margin: 0 0 20px;
+                margin: 0 0 20px;
+                font-size: 19px;
+                line-height: 22px;
 			}
 
 			a.more {
@@ -4541,14 +4580,13 @@ section.page-ortho-mako {
 
 		.form {
             max-width: 554px;
-            padding-right: 40px;
-			.row {
+            .row {
 				margin-bottom: 32px;
 
                 .tip{
                     font-style: italic;
                     margin-top: 18px;
-                    margin-bottom: 20px;
+                    margin-bottom: 52px;
                 }
 				
 				label {
@@ -4675,14 +4713,21 @@ section.page-ortho-mako {
 					min-width: 104px;
 					line-height: 38px;
 					font-weight: bold;
-					font-size: 19px;
+                    font-size: 19px;
+                    font-weight: 600;
                     padding: 0;
                     letter-spacing: -0.37px;
+                    background: #3c96d5;
+                    &:hover{
+                        background: #8ac8f5;
+                    }
 				}
 			}
 		}
 		> .text {
-			flex: 0 0 343px;
+            flex: 0 0 343px;
+            padding-top: 15px;
+            color:#34445C;
 			a {
 				font-weight: 600;
 				color: #3c96d5;
@@ -4693,7 +4738,7 @@ section.page-ortho-mako {
 		}
     }
     
-    @media (max-width: 1023px){
+    @media (max-width:1023px){
         padding-bottom: 55px;
         .sub-header .breadcrumbs li.home{
             display: block;
