@@ -7549,7 +7549,7 @@ section.page-ortho-mako .module-cta .text {
   margin-bottom: 17px;
 }
 .news-page .news-list > div .date {
-  color: #8ac8f5;
+  color: #3c96d5;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -7569,6 +7569,7 @@ section.page-ortho-mako .module-cta .text {
   align-items: center;
   justify-content: center;
   margin-top: 63px;
+  padding-bottom: 87px;
 }
 .news-page .pagination a {
   opacity: 0.5;
@@ -7626,13 +7627,17 @@ section.page-ortho-mako .module-cta .text {
   margin-top: -66px;
 }
 .news-post .news-content .date {
-  color: #8ac8f5;
+  color: #3c96d5;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   display: block;
   margin-bottom: 18px;
   text-align: center;
+}
+.news-post .news-content .date span {
+  border-bottom: 1px solid #3c96d5;
+  padding-bottom: 2px;
 }
 .news-post .news-content h1 {
   max-width: 632px;
@@ -7659,12 +7664,14 @@ section.page-ortho-mako .module-cta .text {
   transform: translateX(-50%);
 }
 .news-post .news-content a {
-  color: #8ac8f5;
+  color: #3c96d5;
   font-weight: 600;
   text-decoration: none;
+  border-bottom: 1px solid #3c96d5;
+  padding-bottom: 0;
 }
 .news-post .news-content a:hover {
-  text-decoration: underline;
+  border-bottom-color: transparent;
 }
 .news-post .news-content p {
   margin-bottom: 30px;

@@ -3124,12 +3124,12 @@ section.page-ortho-mako {
 			}
 
 			.date {
-				color: #8ac8f5;
+				color: #3c96d5;
 				font-size: 16px;
 				font-weight: 500;
 				line-height: 20px;
 				display: block;
-				margin-bottom: 14px;
+                margin-bottom: 14px;
 			}
 
 			p {
@@ -3147,7 +3147,8 @@ section.page-ortho-mako {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: 63px;
+        margin-top: 63px;
+        padding-bottom: 87px;
 		a {
 			opacity: 0.5;
 			color: #0a2a5a;
@@ -3213,13 +3214,18 @@ section.page-ortho-mako {
 
 	.news-content {
 		.date {
-			color: #8ac8f5;
+			color: #3c96d5;
 			font-size: 16px;
 			font-weight: 500;
 			line-height: 20px;
 			display: block;
 			margin-bottom: 18px;
-			text-align: center;
+            text-align: center;
+                  
+            span{ 
+                border-bottom: 1px solid #3c96d5;
+                padding-bottom: 2px;
+            }
 		}
 		h1 {
 			max-width: 632px;
@@ -3246,11 +3252,13 @@ section.page-ortho-mako {
 			}
 		}
 		a {
-			color: #8ac8f5;
+			color: #3c96d5;
 			font-weight: 600;
-			text-decoration: none;
+            text-decoration: none;
+            border-bottom: 1px solid #3c96d5;
+            padding-bottom: 0;
 			&:hover {
-				text-decoration: underline;
+				border-bottom-color: transparent;
 			}
 		}
 		p {
