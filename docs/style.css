@@ -8984,3 +8984,25 @@ section.page-ortho-mako .module-cta .text {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media all and (min-width: 768px){
+    .hospital-page .service {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hospital-page .service {
+        clear: both;
+    }
+
+    .hospital-page .service .thumb img {
+        float: right;
+        margin-left: 50px;
+    }
+
+    .hospital-page .service:before,.hospital-page .service:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
