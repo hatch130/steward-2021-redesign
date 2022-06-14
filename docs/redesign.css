@@ -108,7 +108,7 @@
 .dialog-left-title {
 	color: #0A2A5A;
 	position: absolute;
-	bottom: 0;
+	bottom: -10px;
 	left: 0;
 	font-weight: bold;
 	font-size: 15px;
