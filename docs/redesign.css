@@ -342,6 +342,10 @@
 
 .home-page .hero ul a {color: #fff;}
 
+.alert-box .button.dark {
+	color: #0A2A5A;
+}
+
 @media all and (max-width: 992px) {
 	.map-cols {
 	    flex-wrap: wrap;
